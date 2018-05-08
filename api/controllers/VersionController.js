@@ -430,7 +430,7 @@ module.exports = {
           var latestYml = "version: " + latestVersion.name
                           + "\nreleaseDate: " + latestVersion.updatedAt
                           + "\npath: " + downloadPath
-                          + "\nsha2: " + sha2;
+                          + "\nsha512: " + sha2;
           res.ok(latestYml);
         } else {
           res.notFound();
@@ -502,7 +502,7 @@ module.exports = {
           var latestYml = "version: " + latestVersion.name
                           + "\nreleaseDate: " + latestVersion.updatedAt
                           + "\npath: " + downloadPath
-                          + "\nsha2: " + sha2;
+                          + "\nsha512: " + sha2;
           res.ok(latestYml);
         } else {
           res.notFound();
